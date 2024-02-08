@@ -5,7 +5,6 @@ Sample Output :
 1 час
 6 минут
 40 секунд
-
 """
 seconds = 4000
 hours = seconds // 3600
