@@ -2,7 +2,7 @@
 Дано число n. Определить первую цифру этого числа.
 """
 
-number = 911236
+number = int(input("Введите число "))
 first_digit = None
 
 while number >= 10:
