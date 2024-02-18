@@ -1,13 +1,12 @@
 """
-Удалить из текста символы, являющиеся строчными латинскими буквами
+Дан текст. Слова в тексте разделены одним или несколькими пробелами. Написать программу определяющую количество слов, заканчивающихся одной и той же буквой ‘k’
 """
-test_text = "FGfs"
-new_text = ''
-letters = []
-for letter in range(ord('A'), ord('Z')+1):
-    letters.append(chr(letter))
-
-for char in test_text:
-    if not (char.isalpha() and char in letters and char.isupper()):
-        new_text += char
-print(new_text)
+test_text = input("Введите строку ")
+temp = test_text.split(" ")
+cnt = 0
+for letter in temp:
+    if letter:
+        lst_letter = list(letter)
+        if lst_letter[-1] == "k":
+            cnt += 1
+print(f'Колчество слов {cnt}')
