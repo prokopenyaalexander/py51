@@ -5,7 +5,7 @@
 number = int(input('Введите число '))
 index = 1
 temp = 1
-while index < number:
+while index <= number:
     temp += 1
     index = temp ** 2
     if index > number:
