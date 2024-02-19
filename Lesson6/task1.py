@@ -12,10 +12,9 @@ def minimum(a, b, c):
         print(f'Наибольшее число {c}')
 
 
-
 print("Введите числа a, b, c")
-number_one = float(input())
-number_two = float(input())
-number_three = float(input())
+number_one = int(input())
+number_two = int(input())
+number_three = int(input())
 
 minimum(number_one, number_two, number_three)
