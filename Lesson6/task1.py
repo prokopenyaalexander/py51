@@ -3,18 +3,18 @@
 """
 
 
-def minimum(a, b, c):
-    if c < a > b:
-        print(f'Наибольшее число {a}')
-    elif c < b > a:
-        print(f'Наибольшее число {b}')
-    elif b < c > a:
-        print(f'Наибольшее число {c}')
+def minimum(*args):
+    min_number = 0
+    for i in args[0]:
+        if min_number > int(i):
+            min_number = i
+    print(f'Минимальное число {min_number}')
 
 
-print("Введите числа a, b, c")
-number_one = int(input())
-number_two = int(input())
-number_three = int(input())
+temp_lst = []
+print("Введите числа")
+for num in range(3):
+    number = int(input())
+    temp_lst.append(number)
 
-minimum(number_one, number_two, number_three)
+minimum(temp_lst)
