@@ -22,7 +22,6 @@ def timerange(func):
 @timerange
 def input_creds():
     nickname = input("Введите никнейм(email) ")
-
     print("Пароль должен содержать минимум 8 символов, 1 заглавную букву и 1 символ !@#")
     password = input("Введите пароль ")
     for ch in password:
