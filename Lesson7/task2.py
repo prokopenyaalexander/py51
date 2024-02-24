@@ -22,7 +22,7 @@ def timerange(func):
 
 @timerange
 def print_primes():
-    for num in range(2, 111111):
+    for num in range(2, 11111):
         is_prime = True
         for i in range(2, num):
             if num % i == 0:
