@@ -10,9 +10,10 @@ def timerange(func):
 
     def wrapper():
         start_time = datetime.datetime.now()
-        print(f'Время старта работы - {start_time}')
+
         func()
         end_time = datetime.datetime.now()
+        print(f'Время старта работы - {start_time}')
         print(f'Время финиша работы - {end_time}')
         execution_time = end_time - start_time
         return f'Время работы программы - {execution_time}'
@@ -21,7 +22,7 @@ def timerange(func):
 
 @timerange
 def print_primes():
-    for num in range(2, 10999999999999999999991111111111111111111115555555555555555555555555566666666666666666661):
+    for num in range(2, 111111):
         is_prime = True
         for i in range(2, num):
             if num % i == 0:
