@@ -8,13 +8,11 @@ def is_prime(n):
     if n > 1:
         for i in range(2, int(n / 2) + 1):
             if (n % i) == 0:
-                print("False")
-                break
-        else:
-            print("True")
+                return False
+        return True
     else:
-        print(False)
+        return False
 
 
 num = int(input("Введите число n "))
-is_prime(num)
+print(is_prime(num))
