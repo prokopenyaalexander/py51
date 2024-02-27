@@ -14,7 +14,7 @@ side_one = int(input("Введите сторону a "))
 side_two = int(input("Введите сторону b "))
 side_three = int(input("Введите сторону c "))
 if side_one == 0 or side_two == 0 or side_three == 0:
-    raise ArithmeticError("Длина стороны треугольника не может быть равна 0")
+    raise ArithmeticError("Длина стороны треугольника не может быть равна 0 ")
 else:
     print(calc(side_one, side_two, side_three))
 
