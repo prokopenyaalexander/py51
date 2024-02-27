@@ -7,7 +7,6 @@ test_dict = {'a': '1', '2': 'aa', '3': '!'}
 
 
 def check_key(arg):
-
     key = input("Введите ключ ")
     if key not in arg.keys():
         raise KeyError("Такой ключ отсутствует в словаре ")
