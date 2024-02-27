@@ -12,8 +12,8 @@ def concat(arg: str):
     some_string = 'some_string'
     try:
         return f'{arg + some_string}'
-    except TypeError:
-        return f'Введный эелемент - {arg} не соответствует типу строка.\nОшибка {TypeError}'
+    except TypeError as error:
+        return f'Введный эелемент - {arg} не соответствует типу строка.\nОшибка {error}'
 
 
 print(concat(choice))
