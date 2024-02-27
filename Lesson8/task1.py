@@ -9,7 +9,7 @@ def check_index(lst):
     try:
         index = int(input("Введите индекс элемнта, который хотите вывести "))
         return f'Массив {lst}\nВведнный индекс {index} - эелемент {lst[index]}'
-    except IndexError as error :
+    except IndexError as error:
         return f'Ошибка - {error}'
 
 
