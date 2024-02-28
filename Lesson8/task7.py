@@ -4,7 +4,7 @@
 если не встречалось.
 """
 
-sequence_of_numbers = input("Введите числа через проблел ")
+sequence_of_numbers = input("Введите числа через пробел ")
 print(f'Исходная последовательность {sequence_of_numbers}')
 
 
