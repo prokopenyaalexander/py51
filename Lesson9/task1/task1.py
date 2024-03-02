@@ -2,7 +2,7 @@
 1.	Имеется текстовый файл. Получить текст, в котором в конце каждой строки из заданного файла есть восклицательный знак.
 info.txt
 """
-path = "/Lesson9/task1/info.txt"
+path = "D:/pyhon/py51/Lesson9/task1/info.txt"
 
 
 def rewrite_string(arg):
